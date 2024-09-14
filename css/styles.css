@@ -203,12 +203,8 @@ body {
   width: calc(100%-72) / 4;
   background-color: #ffffff;
 }
-.pfoto-team {
-  margin-bottom: 32px;
-}
 .signature {
   padding: 32px 0;
-  margin: 0 auto 32px;
 }
 .title-item-team {
   font-weight: 500;
@@ -274,11 +270,7 @@ body {
   background-color: #2e2f42;
   padding: 100px 0px;
 }
-.footer {
-  max-width: 264px;
-  margin-left: 0;
-  margin-right: auto;
-}
+
 .footer-logo {
   margin-bottom: 16px;
   display: inline-block;
