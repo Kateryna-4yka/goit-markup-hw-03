@@ -106,6 +106,7 @@ body {
 /*===============section-title==============*/
 .section-title {
   background-color: #2e2f42;
+  padding: 188px 473px;
 }
 .page-title {
   font-size: 56px;
@@ -140,6 +141,9 @@ body {
 }
 
 /*===============section-company==============*/
+.section company {
+  padding: 156px 120px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -179,9 +183,17 @@ body {
 }
 /*===============section-team==============*/
 .team {
+  padding: 120px 156px;
+}
+.team {
   background: #f4f4fd;
 }
-
+.item-team {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+}
 .item-team,
 .item-portfolio {
   background-color: #ffffff;
@@ -225,7 +237,9 @@ body {
 }
 
 /*===========================*/
-
+.portfolio {
+  padding: 120px 156px;
+}
 .list-portfolio {
   display: flex;
   column-gap: 24px;
@@ -274,4 +288,5 @@ body {
 }
 .footer-logo {
   margin-bottom: 16px;
+  display: inline-block;
 }
