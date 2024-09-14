@@ -1,15 +1,47 @@
+/*============== global changes ==============*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section {
+  padding: 120px 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
-ul,
-ol {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
+/*============== header ==============*/
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -21,13 +53,17 @@ a {
 }
 .header-logo .logo-part {
   color: #2e2f42;
+  padding: 24px 0;
+  margin-right: 76px;
 }
 
 .nav-link {
+  display: block;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 .nav-link:hover,
 .nav-link:focus,
@@ -37,13 +73,37 @@ a {
 }
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 .address-link {
+  display: block;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
 }
-
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.list-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+/*===============section-title==============*/
 .section-title {
   background-color: #2e2f42;
 }
@@ -53,6 +113,11 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  box-sizing: border-box;
 }
 .button {
   font-weight: 500;
@@ -61,17 +126,39 @@ a {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  text-align: center;
+  display: block; /*н======================е працює 8, */
+  padding: 16px 32px;
+  border-radius: 4px;
+  max-width: 169px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button:hover,
 .button:focus {
   background-color: #404bbf;
 }
-.title-company {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
+
+/*===============section-company==============*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list-company {
+  display: flex;
+  column-gap: 24px;
+  max-width: 1128px;
+}
+.item-compani {
+  width: calc((100%-72px) / 4);
 }
 .title-item-compani,
 .title-item-portfolio {
@@ -87,6 +174,10 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.title-item-compani {
+  margin-bottom: 8px;
+}
+/*===============section-team==============*/
 .team {
   background: #f4f4fd;
 }
@@ -101,7 +192,19 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 72px;
   color: #2e2f42;
+}
+.list-team {
+  display: flex;
+  column-gap: 24px;
+  width: calc(100%-72) / 4;
+}
+.pfoto-team {
+  margin-bottom: 32px;
+}
+.signature {
+  margin: 0 16px 32px;
 }
 .title-item-team {
   font-weight: 500;
@@ -110,12 +213,33 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin: 0 49px 8px;
 }
 .text-item-team {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-left: 52px;
+  margin-right: 52px;
+}
+
+/*===========================*/
+
+.list-portfolio {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+.item-portfolio {
+  width: calc(100%-120px) / 6;
+}
+.signature-portfolio {
+  padding: 32px 16px;
+}
+.title-item-portfolio {
+  margin-bottom: 8px;
 }
 .title-portfolio {
   font-size: 36px;
@@ -123,6 +247,9 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
 }
 
 .footer-logo .logo-part {
@@ -135,8 +262,16 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 .title-team,
 .title-portfolio {
   text-transform: capitalize;
+}
+
+.page-footer {
+  padding: 100px 156px;
+}
+.footer-logo {
+  margin-bottom: 16px;
 }
